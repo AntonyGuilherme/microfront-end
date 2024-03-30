@@ -1,0 +1,14 @@
+{
+  "name": "luna-cdn-server",
+  "version": "1.0.0",
+  "description": "a simple cdn for the spa luna project",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ../ && npm run build && http-server ./public"
+  },
+  "author": "Antony",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

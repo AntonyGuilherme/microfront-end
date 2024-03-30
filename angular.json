@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/luna",
+            "outputPath": "cdn-server/public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -43,7 +43,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "none"
             },
             "development": {
               "buildOptimizer": false,
