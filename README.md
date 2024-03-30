@@ -1,6 +1,7 @@
-## How to use it on .NET
+## Why?
 
-First of all, clone this repository. After, run a npm install at the project's root.
+If you want to use a SPA on your .NET application. Allways remwber: it is just a POC, so if you really want to do a thing like that, do it in the right way, Ok mate?
+This is intended to behave as microfrontend, but if we need as SPA too. Without any modification to the angular SPA.
 
 ## Config the "Local CDN"
  Tou will need to install the http-server lib. For that execute: npm install --global http-server. 
