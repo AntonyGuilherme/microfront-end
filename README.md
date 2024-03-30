@@ -18,7 +18,7 @@ using http://127.0.0.1:8080.
 
 option 2: Run this project as a SPA, for that, you just need to run ng serve or npm run start.
 
-## .NET configuration Step one
+## .NET configuration
 
 On your .NET MVC project, we will need:
 
@@ -27,13 +27,21 @@ On your .NET MVC project, we will need:
 ```c#
 public class HomeController : Controller
 {
-        // this action will receive all requests and move foward to our SPA application 
+        //This action will receive all requests and move forward to our SPA application 
         [Route("/[controller]/{*anything}")]
         public ActionResult Index()
         {
             return View(new RouteEntryPoint(Request.Path, Request.Query));
         }
 }
+```
+
+# Add the controller route registration
+
+```c#
+app.MapControllerRoute(
+    name: "entry-point-configuration",
+    pattern: "{controller=Home}");
 ```
 
 # Add the entry-point router model, to help us move forward with the request data 
